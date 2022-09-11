@@ -1,8 +1,8 @@
-import random
+from random import randint
 
 
 def guess(x):
-    answer = random.randint(1, x)
+    answer = randint(1, x)
     while True:
         user_input = int(input(f'Guess number 1~{x}: '))
         if user_input == answer:
